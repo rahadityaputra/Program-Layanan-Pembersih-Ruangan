@@ -7,6 +7,8 @@ void warning(string salah);
 
 
 int main() {
+    string sys_username = "a";
+    string sys_password = "1";
     string password, username;
     int kesempatan_login = 5;
 
@@ -14,11 +16,11 @@ int main() {
     // TODO membuat perulangan untuk sesi login dengan kesempatan login sebanyak 5 kali.
     do {
         if (kesempatan_login != 5) {
-            if (username != "adit" && password == "1")
+            if (username != sys_username && password == sys_password)
                 warning("username");      
-            else if (password != "1" && username == "adit") 
+            else if (password != sys_password && username == sys_username) 
                 warning("password");
-            else if (password != "1" && username != "adit") 
+            else if (password != sys_password && username != sys_username) 
                 warning("username dan password");             
         }
         
@@ -28,7 +30,7 @@ int main() {
         kesempatan_login--;
         if (kesempatan_login == 0)
             cout << "Anda terlalu banyak mencoba untuk login, coba lagi nanti !" << endl;
-    } while ((username != "adit" || password != "1") && kesempatan_login > 0); 
+    } while ((username != sys_username || password != sys_password) && kesempatan_login > 0); 
     return 0;
 }
 
