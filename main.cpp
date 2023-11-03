@@ -3,8 +3,23 @@ using namespace std;
 
 // todo membuat function untuk memberi peringatan bahwa password atau username anda salah
 void warning(string salah);
-// todo membuat function untuk menampilkan profil tergantung siapa yang login
 
+// todo membuat function untuk menampilkan profil tergantung siapa yang login
+void tampil_profil_user(string username, string nomer_handphone, string alamat) {
+    cout << "Nama \t: " << username << endl;
+    cout << "No HP \t: " << nomer_handphone << endl;
+    cout << "Alamat \t: " << alamat << endl;
+}
+
+// todo membuat function untuk menampilkan 3 menu utama
+// menu profil, pesan jasa, exit
+void pilihan_menu() {
+    cout << "Selamat dataang di program Jasa Pembersih Ruangan" << endl;
+    cout << "Silahkan pilih menu : " << endl;
+    cout << "1. Profil" << endl;
+    cout << "2. Pesan Jasa" << endl;
+    cout << "3. keluar " << endl;
+}
 
 
 
