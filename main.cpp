@@ -3,6 +3,8 @@ using namespace std;
 
 // todo membuat function untuk memberi peringatan bahwa password atau username anda salah
 void warning(string salah);
+// todo membuat function untuk menampilkan profil tergantung siapa yang login
+
 
 
 
@@ -34,6 +36,7 @@ int main() {
     return 0;
 }
 
+// mendefinisikan function void warning
 void warning(string salah){
     cout << salah << " anda salah !" << endl;
 }
