@@ -3,10 +3,10 @@ using namespace std;
 
 // todo variable global untuk data username dan password
 string sys_username1[2] = {"rahaditya", "123230095"}; 
-string sys_username2[2] = {"alfonsus", "123230095"}; 
-string sys_username3[2] = {"safa", "123230095"}; 
-string sys_username4[2] = {"alma", "123230095"}; 
-string sys_username5[2] = {"akbar", "123230095"}; 
+string sys_username2[2] = {"alfonsus", "123230100"}; 
+string sys_username3[2] = {"safa", "123230081"}; 
+string sys_username4[2] = {"alma", "123230101"}; 
+string sys_username5[2] = {"akbar", "123230113"}; 
 
 // todo membuat function untuk memberi peringatan bahwa password atau username anda salah
 void warning();
