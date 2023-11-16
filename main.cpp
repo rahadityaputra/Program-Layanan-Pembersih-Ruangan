@@ -12,10 +12,28 @@ string sys_username5[2] = {"akbar", "123230113"};
 void warning();
 
 // todo membuat function untuk menampilkan profil tergantung siapa yang login
-void tampil_profil_user(string username, string nomer_handphone, string alamat) {
-    cout << "Nama \t: " << username << endl;
-    cout << "No HP \t: " << nomer_handphone << endl;
-    cout << "Alamat \t: " << alamat << endl;
+void tampil_profil_user(string username) {
+    if (username == sys_username1[0]) {
+        cout << "Nama \t: Rahaditya" << endl;
+        cout << "No HP \t: 081111111111" << endl;
+        cout << "Alamat \t: Jalan Sudirman No Rumah 23, Sleman" << endl;        
+    } else if (username == sys_username2[0]) {
+        cout << "Nama \t: Alfonsus" << endl;
+        cout << "No HP \t: 082222222222" << endl;
+        cout << "Alamat \t: Jalan Sudirman No Rumah 15, Sleman" << endl;        
+    } else if (username == sys_username3[0]) {
+        cout << "Nama \t: Safa" << endl;
+        cout << "No HP \t: 083333333333" << endl;
+        cout << "Alamat \t: Jalan Sudirman No Rumah 10, Sleman" << endl;                
+    } else if (username == sys_username4[0]) {
+        cout << "Nama \t: Alma" << endl;
+        cout << "No HP \t: 084444444444" << endl;
+        cout << "Alamat \t: Jalan Sudirman No Rumah 30, Sleman" << endl;        
+    } else {
+        cout << "Nama \t: Akbar" << endl;
+        cout << "No HP \t: 085555555555" << endl;
+        cout << "Alamat \t: Jalan Sudirman No Rumah 35, Sleman" << endl;        
+    }     
 }
 
 // todo membuat function untuk menampilkan 3 menu utama
@@ -38,10 +56,9 @@ bool input_login(string username, string password){
 }
 
 int main() {
-    // string sys_username = "a";
-    // string sys_password = "1";
     string password, username;
     int kesempatan_login = 5;
+    int pilih ;
 
     cout << "PROGRAM LAYANAN PEMBERSIH RUANGAN" << endl;
     // TODO membuat perulangan untuk sesi login dengan kesempatan login sebanyak 5 kali.
@@ -62,6 +79,10 @@ int main() {
     // * masuk ke dalam program utamanya
     if (input_login(username, password)) {
        pilihan_menu();
+       cout << "Pilih :"; cin >> pilih;
+       if (pilih == 1) {
+            tampil_profil_user(username);
+       }
     }
 
     return 0;
